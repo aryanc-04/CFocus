@@ -1,0 +1,27 @@
+
+/* global vars */
+:root {
+    --bg: #171819;
+    --text: #ffffff;
+}
+
+
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* style base body */
+body {
+    width: 300px;
+    min-height: 60px;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+}
