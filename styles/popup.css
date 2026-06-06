@@ -2,7 +2,17 @@
 /* global vars */
 :root {
     --bg: #171819;
+    --surface: #222425;
+    --surface2: #202122;
+
     --text: #ffffff;
+    --text-dim: #8c88a1c7;
+
+    --accent: #F66ACA;
+    --accent-lo: #f66aca2c;
+
+    --border: #F66ACA;
+    --border-lo: #ec6cc370;
 }
 
 
@@ -25,3 +35,52 @@ body {
     font-family: "JetBrains Mono", monospace;
     font-size: 12px;
 }
+
+
+/* header layout */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 13px 13px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.header-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: var(--accent-lo);
+    border: 1px solid var(--border);
+
+    /* flexbox to center the svg in its box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent);
+}
+
+.header-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.header-badge {
+    /* since the parent is flexbox, margin-auto in child fill empty space */
+    margin-left: auto;
+
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    background: var(--surface2);
+    border: 1px solid var(--border-lo);
+    border-radius: 5px;
+    padding: 4px 6px;
+    text-transform: uppercase;
+}
+
+
+
