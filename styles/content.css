@@ -1,12 +1,12 @@
 
 /* content layout */
 .content {
-    padding: 12px 0px 8px 0px;
+    padding: 12px 0px 15px 0px;
 }
 
 .group {
     padding: 0 8px;
-    margin-bottom: 12px;
+    /* margin-bottom: 10px; */
 }
 
 .group-label {

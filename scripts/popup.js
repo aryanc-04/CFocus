@@ -4,16 +4,22 @@
 // grab the container for the toggle buttons
 const container = document.getElementById("settings-container");
 
+const on_cf = true;
 
-// build component for testing
-const row1 = createToggleRow("Hide Sidebar", false, (newState) => {
-    console.log("Sidebar is now : ", newState);
+if (on_cf) {
+    console.log("On codeforces, showing toggles...");
+    const row1 = createToggleRow("Hide sidepanel", false, (newState) => {
+        
+    });
+    container.appendChild(row1);
+}
+else {
+    container.innerHTML = "";
+}
+
+const content_area = document.querySelector(".footer-container");
+const footer = createFooter(() => {
+    console.log("Reset button was clicked!");
 });
-const row2 = createToggleRow("Hide Tags", false, (newState) => {
-    console.log("Tags are now : ", newState);
-});
 
-
-// inject the toggle
-container.appendChild(row1);
-container.appendChild(row2);
+content_area.appendChild(footer);

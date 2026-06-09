@@ -1,0 +1,36 @@
+
+
+/* footer */
+
+.footer-container {
+    padding: 8px 8px;
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end; /* push the button to far right */
+
+}
+
+.reset-button {
+    padding: 6px 10px;
+    background: none;
+    color: var(--text-dim);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.reset-button:hover {
+    color: var(--text);
+    background: rgb(246, 106, 202, 0.3);
+}
