@@ -1,0 +1,27 @@
+
+/* content layout */
+.content {
+    padding: 12px 0px 8px 0px;
+}
+
+.group {
+    padding: 0 8px;
+    margin-bottom: 12px;
+}
+
+.group-label {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 7px;
+    padding-left: 2px;
+}
+
+.group-body {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+}
+

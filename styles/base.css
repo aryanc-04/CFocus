@@ -1,0 +1,42 @@
+
+/* global vars */
+:root {
+    --bg: #171819;
+    --surface: #222425;
+    --surface2: #202122;
+
+    --text: #ffffff;
+    --text-dim: #8c88a1c7;
+
+    --accent: #F66ACA;
+    --accent-lo: #f66aca2c;
+
+    --border: #F66ACA;
+    --border-lo: #ec6cc370;
+
+    /* for toggle */
+    --on: var(--accent);
+    --off: #494950;
+}
+
+
+/* reset css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* style base body */
+body {
+    width: 300px;
+    min-height: 60px;
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+}
+
